@@ -1,7 +1,7 @@
 /* Typography */
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   min-height: 100%;
 }
 
@@ -53,7 +53,15 @@ main > .intro {
 main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
-	font-weight: 100;
+	font-weight: 300;
+}
+
+main > .about {
+	font-size: 1.5rem;
+	margin: 1.5rem 1rem;
+	font-weight: 300;
+	text-align: center;
+	padding: 0 21% 1.5%;
 }
 
 .icons-social i {
@@ -69,4 +77,30 @@ main > .tagline {
 	margin-left: 0.675rem;;
 	width: 2.65rem;
 	height: 2.65rem;
+}
+
+.tooltip-inner {
+  background-color: #451881;
+  /*!important is not necessary if you place custom.css at the end of your css calls. For the purpose of this demo, it seems to be required in SO snippet*/
+  color: #fff;
+}
+
+.tooltip-arrow {
+  background-color: #451881;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #451881;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: #451881;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #451881;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: #451881;
 }
